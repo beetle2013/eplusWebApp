@@ -36,10 +36,19 @@ header a{
     background-position: 0 -28px;
 }
 
+header .input-wrapper{
+    margin-top: 4px;
+    display: inline-block;
+    height: 30px;
+    background: #fff;
+    border: 1px solid#ddd;
+    border-radius: 4px;
+}
+
 header input{
-    padding: 7px;
-    border: 1px solid #ddd;
-    border-radius: 2px!important;
+    float: left;
+    height: 30px;
+    border: 0;
 }
 
 .swiper-container{

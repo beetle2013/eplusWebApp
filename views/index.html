@@ -16,7 +16,9 @@
 <!--header 定位图标 标题 消息图标-->
 <header class="clearfix">
     <a href="" class="pull-left"><span class="ico ico-location pull-left"></span>上海</a>
-    <input type="search" placeholder="搜索您想要找的商品">
+    <div class="input-wrapper">
+        <input type="search" placeholder="搜索您想要找的商品">
+    </div>
     <a href="" class="pull-right"><span class="ico ico-message"></span></a>
 </header>
 <!--banner 滚动-->
@@ -30,7 +32,6 @@
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
-
     </div>
 </section>
 
@@ -61,13 +62,13 @@
 <script>
     $(document).ready(function () {
         var w = $('header').outerWidth();
-        $('.swiper-container').width(w).height(w/2);
+        $('.swiper-container').width(w).height(w / 2);
         //initialize swiper when document ready
         var mySwiper = new Swiper('.swiper-container', {
             // Optional parameters
-            speed:800,
+            speed: 800,
             loop: true,
-            autoplay:1000
+            autoplay: 1000
         })
     });
 </script>
