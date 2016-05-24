@@ -37,6 +37,7 @@ header a{
 }
 
 header .input-wrapper{
+    width: 60%;
     margin-top: 4px;
     display: inline-block;
     height: 30px;
@@ -46,6 +47,7 @@ header .input-wrapper{
 }
 
 header input{
+    width: 100%;
     float: left;
     height: 30px;
     border: 0;
