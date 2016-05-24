@@ -41,3 +41,23 @@ header input{
     border: 1px solid #ddd;
     border-radius: 2px;
 }
+
+.swiper-container{
+    width: 640px;
+    height: 310px;
+}
+
+.one{
+    background: url('../img/banner1.jpg');
+    background-size: 100%;
+}
+
+.two{
+    background: url('../img/banner2.jpg');
+    background-size: 100%;
+}
+
+.three{
+    background: url('../img/banner3.jpg');
+    background-size: 100%;
+}

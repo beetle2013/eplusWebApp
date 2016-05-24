@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="format-detection"content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="format-detection" content="telephone=no"/>
 
     <title>水果铺</title>
     <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../libs/Swiper/dist/css/swiper.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
@@ -19,6 +20,19 @@
     <a href="" class="pull-right"><span class="ico ico-message"></span></a>
 </header>
 <!--banner 滚动-->
+
+<section class="banner">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide one"></div>
+            <div class="swiper-slide two"></div>
+            <div class="swiper-slide three"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+    </div>
+</section>
 
 <!--menu 图标带字 1行4个，1-2行-->
 <section class="menu"></section>
@@ -41,5 +55,21 @@
 </footer>
 
 
+<script src="../libs/jquery/dist/jquery.min.js"></script>
+<script src="../libs/Swiper/dist/js/swiper.jquery.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        var w = $('header').outerWidth();
+        $('.swiper-container').width(w).height(w/2);
+        //initialize swiper when document ready
+        var mySwiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            speed:800,
+            loop: true,
+            autoplay:1000
+        })
+    });
+</script>
 </body>
 </html>
