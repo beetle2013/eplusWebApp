@@ -37,9 +37,9 @@ header a{
 }
 
 header input{
-    /*padding: 7px;*/
-    /*border: 1px solid #ddd;*/
-    /*border-radius: 2px;*/
+    padding: 7px;
+    border: 1px solid #ddd;
+    border-radius: 2px!important;
 }
 
 .swiper-container{
