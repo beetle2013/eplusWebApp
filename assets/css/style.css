@@ -40,7 +40,6 @@ header input{
     padding: 7px;
     border: 1px solid #ddd;
     border-radius: 0!important;
-    -webkit-appearance : none ;
 }
 
 .swiper-container{
