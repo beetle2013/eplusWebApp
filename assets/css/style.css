@@ -39,7 +39,7 @@ header a{
 header input{
     padding: 7px;
     border: 1px solid #ddd;
-    border-radius: 2px!important;
+    border-radius: 0!important;
 }
 
 .swiper-container{
