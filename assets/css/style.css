@@ -1,5 +1,43 @@
 
+body{
+    background: #fff;
+}
+
 header{
-    height:80px;
-    background: #ddd;
+    padding: 0 12px;
+    height:40px;
+    line-height:40px;
+    text-align: center;
+    color:#f77a38;
+    background: #fdfcfa;
+}
+
+footer{
+    height:48px;
+}
+
+header a{
+    height: inherit;
+    font-size: 17px;
+    color:#f77a38
+}
+
+.ico{
+    position: relative;
+    top:6px;
+    display: inline-block;
+    width: 28px;
+    height:28px;
+    background: url('../img/icons.png');
+    background-size:100% ;
+}
+
+.ico-message{
+    background-position: 0 -28px;
+}
+
+header input{
+    padding: 7px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
