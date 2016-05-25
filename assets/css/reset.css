@@ -37,6 +37,10 @@ table {
     border-spacing: 0;
 }
 
+img{
+    max-width: 100%;
+}
+
 .clearfix:before,
 .clearfix:after {
     content: " ";

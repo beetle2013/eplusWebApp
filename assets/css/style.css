@@ -117,3 +117,8 @@ section {
 .menu-buyget{
     background-position:0 -120px ;
 }
+
+.ad{
+    background: #ddd;
+    padding: 8px;
+}
