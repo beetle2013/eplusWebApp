@@ -22,6 +22,7 @@ header a {
 .main-color{
     color:#f77a38
 }
+
 .main-bg{
     color: #fff;
     background: #f77a38;
@@ -245,6 +246,38 @@ footer a{
 }
 
 .recomend{
-    margin-bottom: 48px;
+    margin-bottom: 58px;
 }
+
+.good-desc{
+    color: gray;
+    font-size: 0.8em;
+}
+
+.good{
+    width: 50%;
+    float: left;
+    position: relative;
+    font-size: 16px;
+}
+s{
+    margin-left: 4px;
+    color: #333;
+    font-size: 0.9em;
+}
+
+/*.ico-cart{
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url('../img/icons.png') 0 -64px;
+    background-size: 100%;
+}
+
+.good a{
+    display: block;
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+}*/
 
