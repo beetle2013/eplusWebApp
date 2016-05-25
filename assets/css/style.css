@@ -81,3 +81,38 @@ header input {
     background: url('../img/banner3.jpg');
     background-size: 100%;
 }
+
+section {
+    background: #fff;
+}
+
+.menus{
+    padding: 10px;
+}
+
+.menus a{
+    display: inline-block;
+    color: #333;
+}
+
+.menus li {
+    float: left;
+    width: 25%;
+}
+.menu{
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background: url('../img/menu.png');
+    background-size: 100%;
+}
+
+.menu-fruit{
+    background-position:0 -64px ;
+}
+.menu-groupon{
+    background-position:0 -128px ;
+}
+.menu-buyget{
+    background-position:0 -192px ;
+}
