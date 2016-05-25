@@ -92,10 +92,6 @@ section {
     border-top: 1px solid #eee;
 }
 
-section:last-child{
-    margin-bottom: 48px;
-}
-
 .menus{
     padding: 10px;
 }
@@ -246,5 +242,9 @@ footer {
 footer a{
     display: block;
     color: #333;
+}
+
+.recomend{
+    margin-bottom: 48px;
 }
 
