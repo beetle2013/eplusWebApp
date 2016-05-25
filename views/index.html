@@ -38,22 +38,37 @@
 <!--menu 图标带字 1行4个，1-2行-->
 <section class="menu-sec">
     <ul class="menus text-center clearfix">
-        <li><a href=""><span class="menu menu-presell"></span><p>预售专区</p></a></li>
-        <li><a href=""><span class="menu menu-fruit"></span><p>新鲜果品</p></a></li>
-        <li><a href=""><span class="menu menu-groupon"></span><p>团购优惠</p></a></li>
-        <li><a href=""><span class="menu menu-buyget"></span><p>买赠专区</p></a></li>
+        <li><a href=""><span class="menu menu-presell"></span>
+            <p>预售专区</p></a></li>
+        <li><a href=""><span class="menu menu-fruit"></span>
+            <p>新鲜果品</p></a></li>
+        <li><a href=""><span class="menu menu-groupon"></span>
+            <p>团购优惠</p></a></li>
+        <li><a href=""><span class="menu menu-buyget"></span>
+            <p>买赠专区</p></a></li>
     </ul>
 </section>
 
-<section class="ad">
+<section class="ad hidden">
     <img src="../assets/img/banner.jpg" alt="">
 </section>
 
 <!--marquee 公告、消息-->
-<section class="marquee"></section>
+<section class="marquee-sec">
+    <span class="pull-left main-bg">店铺公告</span>
+    <div class="marquee-box">
+        <div class="marquee">
+            <a href="">店铺开张特惠，买一赠一。店铺开张特惠，买一赠一</a>
+            <a href="">好吃的水果买起 好吃的水果买起 好吃的水果买起</a>
+            <a href="">正宗红富士苹果开卖 正宗红富士苹果开卖 正宗红富士苹果开卖</a>
+        </div>
+    </div>
+</section>
 
 <!--second-kill 秒杀 栏目名 时间-->
-<section class="second-kill"></section>
+<section class="second-kill">
+
+</section>
 
 <!--hot 热门 更多-->
 <section class="hot"></section>
@@ -66,7 +81,6 @@
 
 </footer>
 
-
 <script src="../libs/jquery/dist/jquery.min.js"></script>
 <script src="../libs/Swiper/dist/js/swiper.jquery.min.js"></script>
 
@@ -74,13 +88,12 @@
     $(document).ready(function () {
         var w = $('header').outerWidth();
         $('.swiper-container').width(w).height(w / 2);
-        //initialize swiper when document ready
         var mySwiper = new Swiper('.swiper-container', {
             // Optional parameters
             speed: 800,
             loop: true,
             autoplay: 1000,
-            pagination : '.swiper-pagination'
+            pagination: '.swiper-pagination'
         })
     });
 </script>

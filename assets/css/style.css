@@ -22,6 +22,14 @@ header a {
     color: #f77a38
 }
 
+.main-color{
+    color:#f77a38
+}
+.main-bg{
+    color: #fff;
+    background: #f77a38;
+}
+
 .ico {
     position: relative;
     top: 6px;
@@ -121,4 +129,23 @@ section {
 .ad{
     background: #eee;
     padding: 8px;
+}
+
+.marquee-sec{
+    padding:10px 20px;
+}
+
+.marquee-box{
+    padding-left: 10px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+.marquee a{
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #333;
 }
