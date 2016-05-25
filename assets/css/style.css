@@ -178,10 +178,15 @@ section {
 }
 
 .second-kill-goods img{
-    width: 100px;
+    width: 90%;
 }
 
 .second-kill-goods li{
     display: inline-block;
     width: 25%;
+}
+
+.second-kill-goods a{
+    display: block;
+    color: #333;
 }
