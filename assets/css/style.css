@@ -38,10 +38,11 @@ header a {
 
 .ico-search {
     float: left;
-    padding: 3px;
-    width: 25px;
-    height: 25px;
-    background: url('../img/icons.png') 0 -250px;
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    background: url('../img/icons.png') 0 -200px;
     background-size: 100%;
 }
 
