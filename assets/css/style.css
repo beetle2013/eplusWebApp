@@ -13,9 +13,7 @@ header {
     background: #fdfcfa;
 }
 
-footer {
-    height: 48px;
-}
+
 
 header a {
     height: inherit;
@@ -104,7 +102,7 @@ section {
     color: #333;
 }
 
-.menus li {
+.menus li ,.footer-menus li {
     float: left;
     width: 25%;
 }
@@ -190,3 +188,56 @@ section {
     display: block;
     color: #333;
 }
+
+footer {
+    height: 48px;
+    position: fixed;
+    bottom:0;
+    left: 0;
+    right: 0;
+}
+
+.footer-menu{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background: url('../img/icons.png');
+    background-size: 100%;
+}
+
+.menu-home{
+    background-position: 0 -196px;
+}
+
+.active .menu-home{
+    background-position: 0 -168px;
+}
+
+.menu-cate{
+    background-position: 0 -140px;
+}
+
+.active .menu-cate{
+    background-position: 0 -112px;
+}
+
+.menu-cart{
+    background-position: 0 -84px;
+}
+
+.active .menu-cart{
+    background-position: 0 -56px;
+}
+
+.menu-me{
+    background-position: 0 -252px;
+}
+
+.active .menu-me{
+    background-position: 0 -224px;
+}
+
+footer a{
+    display: block;
+}
+
