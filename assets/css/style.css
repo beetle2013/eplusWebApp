@@ -133,6 +133,7 @@ section {
 
 .marquee-sec{
     padding:10px;
+    border-top: 1px solid #eee;
 }
 .notice{
     display: inline-block;
