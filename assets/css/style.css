@@ -156,3 +156,32 @@ section {
     overflow: hidden;
     color: #333;
 }
+
+.section-title{
+    padding: 5px 10px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.section-title p{
+    float: left;
+    font-size: 18px;
+}
+
+.count-down{
+    font-size: 14px;
+}
+
+.second-kill-goods{
+    white-space: nowrap;
+    overflow: scroll;
+}
+
+.second-kill-goods img{
+    width: 100px;
+}
+
+.second-kill-goods li{
+    display: inline-block;
+    width: 25%;
+}
