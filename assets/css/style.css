@@ -93,6 +93,7 @@ section {
 .menus a{
     display: inline-block;
     color: #333;
+    font-size: 12px;
 }
 
 .menus li {
@@ -101,18 +102,18 @@ section {
 }
 .menu{
     display: inline-block;
-    width: 64px;
-    height: 64px;
+    width: 40px;
+    height: 40px;
     background: url('../img/menu.png');
     background-size: 100%;
 }
 
 .menu-fruit{
-    background-position:0 -64px ;
+    background-position:0 -40px ;
 }
 .menu-groupon{
-    background-position:0 -128px ;
+    background-position:0 -80px ;
 }
 .menu-buyget{
-    background-position:0 -192px ;
+    background-position:0 -120px ;
 }
