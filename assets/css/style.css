@@ -1,6 +1,7 @@
 
 body {
     background: #fff;
+    font-size: 12px;
 }
 
 header {
@@ -101,7 +102,6 @@ section {
 .menus a{
     display: inline-block;
     color: #333;
-    font-size: 12px;
 }
 
 .menus li {
