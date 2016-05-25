@@ -92,6 +92,10 @@ section {
     border-top: 1px solid #eee;
 }
 
+section:last-child{
+    margin-bottom: 48px;
+}
+
 .menus{
     padding: 10px;
 }
