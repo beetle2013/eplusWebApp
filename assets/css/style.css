@@ -200,6 +200,8 @@ footer {
 }
 
 .footer-menu{
+    position: relative;
+    top: 4px;
     display: inline-block;
     width: 28px;
     height: 28px;
@@ -241,5 +243,6 @@ footer {
 
 footer a{
     display: block;
+    color: #333;
 }
 
