@@ -132,9 +132,13 @@ section {
 }
 
 .marquee-sec{
-    padding:10px 20px;
+    padding:10px;
 }
-
+.notice{
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+}
 .marquee-box{
     padding-left: 10px;
     height: 20px;
