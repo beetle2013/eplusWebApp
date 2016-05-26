@@ -19,11 +19,11 @@ header a {
     color: #f77a38
 }
 
-.main-color,.active{
-    color:#f77a38
+.main-color, .active {
+    color: #f77a38
 }
 
-.main-bg{
+.main-bg {
     color: #fff;
     background: #f77a38;
 }
@@ -43,9 +43,10 @@ header a {
 }
 
 .ico-search {
-    float: left;
-    margin-top: 5px;
-    margin-left: 5px;
+    position: absolute;
+    top: 5px;
+    z-index: 20;
+    left: 5px;
     width: 20px;
     height: 20px;
     background: url('../img/icons.png') 0 -200px;
@@ -53,6 +54,7 @@ header a {
 }
 
 header .input-wrapper {
+    position: relative;
     width: 60%;
     margin-top: 4px;
     display: inline-block;
@@ -63,7 +65,10 @@ header .input-wrapper {
 }
 
 header input {
-    float: left;
+    position: absolute;
+    width: 100%;
+    padding-left: 30px;
+    left: 0;
     height: 30px;
     border: 0;
 }
@@ -93,20 +98,21 @@ section {
     border-top: 1px solid #eee;
 }
 
-.menus{
+.menus {
     padding: 10px;
 }
 
-.menus a{
+.menus a {
     display: inline-block;
     color: #333;
 }
 
-.menus li ,.footer-menus li {
+.menus li, .footer-menus li {
     float: left;
     width: 25%;
 }
-.menu{
+
+.menu {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -114,39 +120,43 @@ section {
     background-size: 100%;
 }
 
-.menu-fruit{
-    background-position:0 -40px ;
-}
-.menu-groupon{
-    background-position:0 -80px ;
-}
-.menu-buyget{
-    background-position:0 -120px ;
+.menu-fruit {
+    background-position: 0 -40px;
 }
 
-.ad{
+.menu-groupon {
+    background-position: 0 -80px;
+}
+
+.menu-buyget {
+    background-position: 0 -120px;
+}
+
+.ad {
     background: #eee;
     padding: 8px;
 }
 
-.marquee-sec{
+.marquee-sec {
     padding: 5px 10px;
     border-top: 1px solid #eee;
 }
-.notice{
+
+.notice {
     display: inline-block;
-    padding:0 3px;
+    padding: 0 3px;
     height: 20px;
     line-height: 20px;
 }
-.marquee-box{
+
+.marquee-box {
     padding-left: 10px;
     height: 20px;
     line-height: 20px;
     overflow: hidden;
 }
 
-.marquee a{
+.marquee a {
     display: block;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -154,34 +164,34 @@ section {
     color: #333;
 }
 
-.section-title{
+.section-title {
     position: relative;
     padding: 5px 10px;
     height: 24px;
     line-height: 24px;
 }
 
-.section-title p{
+.section-title p {
     float: left;
     font-size: 18px;
 }
 
-.second-kill-goods{
+.second-kill-goods {
     white-space: nowrap;
     overflow: scroll;
     margin-bottom: 5px;
 }
 
-.second-kill-goods img{
+.second-kill-goods img {
     width: 90%;
 }
 
-.second-kill-goods li{
+.second-kill-goods li {
     display: inline-block;
     width: 25%;
 }
 
-.second-kill-goods a{
+.second-kill-goods a {
     display: block;
     color: #333;
 }
@@ -191,12 +201,12 @@ footer {
     background: #fff;
     height: 48px;
     position: fixed;
-    bottom:0;
+    bottom: 0;
     left: 0;
     right: 0;
 }
 
-.footer-menu{
+.footer-menu {
     position: relative;
     top: 4px;
     display: inline-block;
@@ -206,82 +216,85 @@ footer {
     background-size: 100%;
 }
 
-.menu-home{
+.menu-home {
     background-position: 0 -196px;
 }
 
-.active .menu-home{
+.active .menu-home {
     background-position: 0 -168px;
 }
 
-.menu-cate{
+.menu-cate {
     background-position: 0 -140px;
 }
 
-.active .menu-cate{
+.active .menu-cate {
     background-position: 0 -112px;
 }
 
-.menu-cart{
+.menu-cart {
     background-position: 0 -84px;
 }
 
-.active .menu-cart{
+.active .menu-cart {
     background-position: 0 -56px;
 }
 
-.menu-me{
+.menu-me {
     background-position: 0 -252px;
 }
 
-.active .menu-me{
+.active .menu-me {
     background-position: 0 -224px;
 }
 
-footer a{
+footer a {
     display: block;
     color: #333;
 }
 
-.recomend{
+.recomend {
     margin-bottom: 58px;
     border-bottom: 1px solid #eee;
 }
 
-.good-desc{
+.good-desc {
     color: gray;
     font-size: 0.8em;
 }
 
-.good{
+.good {
     width: 50%;
     float: left;
     position: relative;
     font-size: 16px;
 }
-.good a{
+
+.good a {
     display: block;
     border-top: 1px solid #eee;
     color: #333;
 }
 
-.good p{
+.good p {
     height: 18px;
-    line-height:18px;
+    line-height: 18px;
 }
 
-.good:nth-child(even) a{
+.good:nth-child(even) a {
     border-right: 1px solid #eee;
 }
-s{
+
+s {
     margin-left: 4px;
     color: #333;
     font-size: 0.9em;
 }
 
-.ico-cart{
+.ico-cart {
     position: absolute;
-    bottom: 62px;
+    border-radius: 2px;
+    bottom: 60px;
     right: 5%;
     width: 25px;
     height: 25px;
@@ -290,6 +303,7 @@ s{
     font-size: 1.2em;
     background: #eee;
 }
+
 .time_left {
     /*display: none;*/
     position: absolute;
@@ -369,3 +383,7 @@ s{
     bottom: 0
 }
 
+/*cate.html*/
+.cate-wrapper{
+    width: 100%!important;
+}
