@@ -245,7 +245,7 @@ footer a{
 
 .recomend{
     margin-bottom: 58px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #eee;
 }
 
 .good-desc{
@@ -261,12 +261,12 @@ footer a{
 }
 .good a{
     display: block;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #eee;
     color: #333;
 }
 
 .good:nth-child(even) a{
-    border-right: 1px solid #ddd;
+    border-right: 1px solid #eee;
 }
 s{
     margin-left: 4px;
