@@ -265,6 +265,11 @@ footer a{
     color: #333;
 }
 
+.good p{
+    height: 18px;
+    line-height:18px;
+}
+
 .good:nth-child(even) a{
     border-right: 1px solid #eee;
 }
@@ -276,7 +281,7 @@ s{
 
 .ico-cart{
     position: absolute;
-    top: 64%;
+    bottom: 62px;
     right: 5%;
     width: 25px;
     height: 25px;
