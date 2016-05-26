@@ -38,5 +38,38 @@ $(document).ready(function () {
 
     setTimeout(marInit, 1500);
 
+    var t = timer();
+    t.countDown(".time_left");
 
 });
+
+function timer() {
+    var instance = {};
+    instance.countDown = function (ele) {
+        var $ele = $(ele);
+        if (!$ele || $ele.length == 0) {
+            return
+        }
+        var intervalSecond = 3600;
+        var hour = $ele.find(".hour");
+        var minute = $ele.find(".min");
+        var second = $ele.find(".second");
+        $ele.show();
+        var hh = 0, mm = 0, ss = 0;
+        var intervals = {};
+        intervals[$ele.selector] = setInterval(function () {
+            intervalSecond--;
+            if (intervalSecond < 0) {
+                clearInterval(intervals[$ele.selector]);
+                return
+            }
+            hh = ~~(intervalSecond / 3600);
+            mm = ~~(intervalSecond / 60 % 60);
+            ss = ~~(intervalSecond % 60);
+            hour.html(hh < 10 ? "0" + hh : hh);
+            minute.html(mm < 10 ? "0" + mm : mm);
+            second.html(ss < 10 ? "0" + ss : ss)
+        }, 1000)
+    };
+    return instance;
+}
