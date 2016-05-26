@@ -274,21 +274,15 @@ s{
     font-size: 0.9em;
 }
 
-/*.ico-cart{
-    display: block;
+.ico-cart{
+    position: absolute;
+    top: 60%;
+    right: 5%;
     width: 32px;
     height: 32px;
     background: url('../img/icons.png') 0 -64px;
     background-size: 100%;
 }
-
-.good a{
-    display: block;
-    position: absolute;
-    right: 4px;
-    bottom: 4px;
-}*/
-
 .time_left {
     /*display: none;*/
     position: absolute;
