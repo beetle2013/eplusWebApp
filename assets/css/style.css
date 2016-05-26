@@ -19,7 +19,7 @@ header a {
     color: #f77a38
 }
 
-.main-color{
+.main-color,.active{
     color:#f77a38
 }
 
@@ -262,6 +262,7 @@ footer a{
 .good a{
     display: block;
     border-top: 1px solid #ddd;
+    color: #333;
 }
 
 .good:nth-child(even) a{
@@ -292,7 +293,7 @@ s{
     /*display: none;*/
     position: absolute;
     right: 2.66666667%;
-    top: 12px;
+    top: 8px;
     z-index: 1;
     height: 20px;
     line-height: 20px;
