@@ -394,7 +394,7 @@ s {
 /*search.html*/
 
 .search-main{
-    padding: 20px;
+    padding: 0 15px;
     color: #909090;
 }
 .search-tag span{
@@ -402,10 +402,10 @@ s {
     background: #fff;
     border: 1px solid #bbb;
     border-radius: 20px;
-    padding: 5px 15px;
+    padding: 0px 12px;
     margin: 5px;
     white-space: nowrap;
-    font-size: 1.4em;
+    font-size: 1.2em;
     height: 30px;
     line-height: 30px;
     display: inline-block;
