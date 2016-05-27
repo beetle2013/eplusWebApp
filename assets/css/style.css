@@ -254,7 +254,6 @@ footer a {
 }
 
 .recomend {
-    margin-bottom: 58px;
     border-bottom: 1px solid #eee;
 }
 
@@ -381,6 +380,10 @@ s {
 
 .time_left .dot:after {
     bottom: 0
+}
+
+.main{
+    margin-bottom: 58px;
 }
 
 /*cate.html*/
