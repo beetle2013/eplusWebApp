@@ -405,6 +405,7 @@ s {
     float: left;
     width: 75%;
     background: #fff;
+    overflow-y: scroll;
 }
 
 .cate-good{
