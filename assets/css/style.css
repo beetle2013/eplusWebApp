@@ -401,10 +401,12 @@ s {
     color: #4e4e4e;
     background: #fff;
     border: 1px solid #bbb;
-    border-radius: 30px;
-    padding: 7px 15px;
-    margin: 10px;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin: 5px;
     white-space: nowrap;
     font-size: 1.4em;
-    line-height: 50px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
 }
