@@ -40,6 +40,10 @@ $(document).ready(function () {
 
     var t = timer();
     t.countDown(".time_left");
+    
+    $('.input-wrapper input').on('tap',function () {
+        alert('search');
+    })
 
 });
 
@@ -73,3 +77,56 @@ function timer() {
     };
     return instance;
 }
+
+$(function () {
+    var counter = 0;
+    // 每页展示4个
+    var num = 4;
+    var pageStart = 0, pageEnd = 0;
+
+    // dropload
+    $('.main').dropload({
+        scrollArea: window,
+        loadDownFn: function (me) {
+            $.ajax({
+                type: 'GET',
+                url: '../json/more.json',
+                dataType: 'json',
+                success: function (data) {
+                    var result = '';
+                    counter++;
+                    pageEnd = num * counter;
+                    pageStart = pageEnd - num;
+
+                    for (var i = pageStart; i < pageEnd; i++) {
+                        result += '<div class="good">' + '<a href="">'
+                            + '<img src="' + data.goods[i].img + '" alt="">'
+                            + '<p>' + data.goods[i].name + '</p>'
+                            + '<p class="good-desc">' + data.goods[i].desc + '</p>'
+                            + '<p class="main-color">￥' + data.goods[i].price + '<s>￥' + data.goods[i].oldprice + '</s></p>'
+                            + '<span class="ico-cart">+</span>'
+                            + '</a>' + '</div>';
+                        if ((i + 1) >= data.goods.length) {
+                            // 锁定
+                            me.lock();
+                            // 无数据
+                            me.noData();
+                            break;
+                        }
+                    }
+                    // 为了测试，延迟1秒加载
+                    setTimeout(function () {
+                        $('.recomend').append(result);
+                        // 每次数据加载完，必须重置
+                        me.resetload();
+                    }, 1000);
+                },
+                error: function (xhr, type) {
+                    alert('Ajax error!');
+                    // 即使加载出错，也得重置
+                    me.resetload();
+                }
+            });
+        }
+    });
+});
