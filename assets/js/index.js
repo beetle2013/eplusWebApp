@@ -42,7 +42,7 @@ $(document).ready(function () {
     t.countDown(".time_left");
     
     $('.input-wrapper input').on('tap',function () {
-        alert('search');
+        window.location.href = "search.html";
     })
 
 });

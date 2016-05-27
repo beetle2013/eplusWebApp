@@ -1,6 +1,6 @@
 
 body {
-    background: #fff;
+    background: #ddd;
     font-size: 12px;
 }
 
@@ -389,4 +389,22 @@ s {
 /*cate.html*/
 .cate-wrapper{
     width: 100%!important;
+}
+
+/*search.html*/
+
+.search-main{
+    padding: 20px;
+    color: #909090;
+}
+.search-tag span{
+    color: #4e4e4e;
+    background: #fff;
+    border: 1px solid #bbb;
+    border-radius: 30px;
+    padding: 7px 15px;
+    margin: 10px;
+    white-space: nowrap;
+    font-size: 1.4em;
+    line-height: 50px;
 }
