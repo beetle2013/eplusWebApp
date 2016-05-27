@@ -392,6 +392,48 @@ s {
     width: 100%!important;
 }
 
+.cates{
+    width: 25%;
+    float: left;
+}
+.cates li{
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+.cate-goods{
+    float: left;
+    width: 75%;
+    background: #fff;
+}
+
+.cate-good{
+    position: relative;
+    border-bottom: 1px solid #ddd;
+}
+
+.cate-good img{
+    float: left;
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+}
+
+.cate-cart{
+    position: absolute;
+    border-radius: 2px;
+    text-align: center;
+    right: 5%;
+    bottom: 5%;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-weight: 600;
+    color: #888;
+    font-size: 1.2em;
+    background: #eee;
+}
+
 /*search.html*/
 
 .search-main{
