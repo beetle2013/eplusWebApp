@@ -3,7 +3,7 @@
     {
       "name": "又有水果1(10斤/箱)",
       "desc": "又来了水果",
-      "img": "../assets/img/993.jpg",
+      "img": "../assets/img/570.jpg",
       "price": "6.60",
       "oldprice": "7.70"
     },
@@ -17,14 +17,42 @@
     {
       "name": "又有水果3(10斤/箱)",
       "desc": "又来了水果",
-      "img": "../assets/img/993.jpg",
+      "img": "../assets/img/3427.jpg",
       "price": "6.60",
       "oldprice": "7.70"
     },
     {
       "name": "又有水果4(10斤/箱)",
       "desc": "又来了水果",
+      "img": "../assets/img/2932.jpg",
+      "price": "6.60",
+      "oldprice": "7.70"
+    },
+    {
+      "name": "又有水果1(10斤/箱)",
+      "desc": "又来了水果",
+      "img": "../assets/img/570.jpg",
+      "price": "6.60",
+      "oldprice": "7.70"
+    },
+    {
+      "name": "又有水果2(10斤/箱)",
+      "desc": "又来了水果",
       "img": "../assets/img/993.jpg",
+      "price": "6.60",
+      "oldprice": "7.70"
+    },
+    {
+      "name": "又有水果3(10斤/箱)",
+      "desc": "又来了水果",
+      "img": "../assets/img/3427.jpg",
+      "price": "6.60",
+      "oldprice": "7.70"
+    },
+    {
+      "name": "又有水果4(10斤/箱)",
+      "desc": "又来了水果",
+      "img": "../assets/img/2932.jpg",
       "price": "6.60",
       "oldprice": "7.70"
     }
