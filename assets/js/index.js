@@ -2,7 +2,7 @@
  * Created by beetle on 2016/5/25.
  */
 $(document).ready(function () {
-    var w = $('header').outerWidth();
+    var w = $('header').width();
     $('.swiper-container').width(w).height(w / 2);
     var mySwiper = new Swiper('.swiper-container', {
         // Optional parameters
