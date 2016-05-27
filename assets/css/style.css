@@ -66,6 +66,7 @@ header .input-wrapper {
 
 header input {
     position: absolute;
+    font-size: 1.2em;
     width: 100%;
     padding-left: 30px;
     left: 0;
