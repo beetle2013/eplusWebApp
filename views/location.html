@@ -8,15 +8,16 @@
 
     <title>定位</title>
 </head>
-<body onload="getLocation()">
+<body>
 
 <script src="../libs/jquery/dist/jquery.min.js"></script>
 <script src="../assets/js/baidugeo.js"></script>
 
 <script>
-    var geo = new baidugeo();
-    var support = geo.isGeoSupport();
-    alert("support");
+    var geo = new geo();
+    if(geo.htmlgeo()){
+        geo.baidugeo();
+    }
 </script>
 </body>
 </html>
