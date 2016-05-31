@@ -104,7 +104,6 @@ function showPosition(position) {
             $business.html('正在定位...');
         },
         success: function (json) {
-            alert(json.status);
             if (json.status == 0) {
                 $business.html(json.result.business);
             }
