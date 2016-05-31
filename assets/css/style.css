@@ -180,7 +180,7 @@ section {
 .second-kill-goods {
     white-space: nowrap;
     overflow: scroll;
-    margin-bottom: 5px;
+    padding-bottom: 5px;
 }
 
 .second-kill-goods img {
