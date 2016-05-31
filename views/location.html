@@ -12,6 +12,8 @@
 
 <div id="demo"></div>
 
+<div id="baidu_geo"></div>
+
 
 <script>
     var x = document.getElementById("demo");
@@ -25,9 +27,30 @@
     function showPosition(position) {
         var lat = position.coords.latitude; //纬度
         var lag = position.coords.longitude; //经度
-        alert('纬度:' + lat + ',经度:' + lag);
+//        alert('纬度:' + lat + ',经度:' + lag);
         x.innerHTML = "Latitude: " + lat +
                 "<br />Longitude: " + lag;
+
+        var latlon = position.coords.latitude+','+position.coords.longitude;
+
+        //baidu
+        var url = "http://api.map.baidu.com/geocoder/v2/?ak=C93b5178d7a8ebdb830b9b557abce78b&callback=renderReverse&location="+latlon+"&output=json&pois=0";
+        $.ajax({
+            type: "GET",
+            dataType: "jsonp",
+            url: url,
+            beforeSend: function(){
+                $("#baidu_geo").html('正在定位...');
+            },
+            success: function (json) {
+                if(json.status==0){
+                    $("#baidu_geo").html(json.result.formatted_address);
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                $("#baidu_geo").html(latlon+"地址位置获取失败");
+            }
+        });
     }
 
     function showError(error) {
