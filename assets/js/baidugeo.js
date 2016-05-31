@@ -9,7 +9,7 @@ var baidu_url = "http://api.map.baidu.com/geocoder/v2/";
 var baidu_ak = "sk4aD5OWDtIzYAgtOD8PdAmW";
 
 
-var htmlgeo = function () {
+function htmlgeo() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(getPosition);
         return true;
@@ -17,13 +17,14 @@ var htmlgeo = function () {
         alert("浏览器不支持地理定位。");
         return false;
     }
+}
 
-    function getPosition(position) {
-        latitude = position.coords.latitude;
-        longitude = position.coords.longitude;
-    }
-};
-var baidugeo = function () {
+function getPosition(position) {
+    latitude = position.coords.latitude;
+    longitude = position.coords.longitude;
+}
+
+function baidugeo() {
     var url = baidu_url + "?ak=" + baidu_ak + "&callback=renderReverse&location=" + latitude + "," + longitude + "&output=json&pois=0";
 
     $.ajax({
