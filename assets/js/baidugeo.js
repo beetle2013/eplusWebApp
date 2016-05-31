@@ -45,4 +45,6 @@ function geo() {
             }
         });
     }
+
+    return instance;
 }
