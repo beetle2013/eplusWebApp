@@ -11,6 +11,7 @@
 <body onload="getLocation()">
 
 <div id="demo"></div>
+<div id="baidu_geo"></div>
 
 
 <script>
@@ -28,6 +29,28 @@
 //        alert('纬度:' + lat + ',经度:' + lag);
         x.innerHTML = "Latitude: " + lat +
                 "<br />Longitude: " + lag;
+
+        var latlon = lat + ',' + lag;
+        var y = document.getElementById("baidu_geo");
+
+        //baidu
+        var url = "http://api.map.baidu.com/geocoder/v2/?ak=C93b5178d7a8ebdb830b9b557abce78b&callback=renderReverse&location=" + latlon + "&output=json&pois=0";
+        $.ajax({
+            type: "GET",
+            dataType: "jsonp",
+            url: url,
+            beforeSend: function () {
+                y.innerHTML = '正在定位...';
+            },
+            success: function (json) {
+                if (json.status == 0) {
+                    y.innerHTML = json.result.formatted_address;
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                y.innerHTML = latlon + "地址位置获取失败";
+            }
+        });
     }
 
     function showError(error) {
