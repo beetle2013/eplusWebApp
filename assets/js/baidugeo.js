@@ -19,6 +19,11 @@ var geo = (function () {
             alert("浏览器不支持地理定位。");
             return false;
         }
+
+        function getPosition(position) {
+            latitude = position.coords.latitude;
+            longitude = position.coords.longitude;
+        }
     };
     instance.baidugeo = function () {
         var url = baidu_url + "?ak=" + baidu_ak + "&callback=renderReverse&location=" + latitude + "," + longitude + "&output=json&pois=0";
@@ -41,10 +46,7 @@ var geo = (function () {
         });
     };
 
-    function getPosition(position) {
-        latitude = position.coords.latitude;
-        longitude = position.coords.longitude;
-    }
+
 
     return instance;
 })();
