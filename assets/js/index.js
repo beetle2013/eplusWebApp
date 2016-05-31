@@ -45,6 +45,8 @@ $(document).ready(function () {
         window.location.href = "search.html";
     })
 
+    getLocation();
+
 });
 
 function timer() {
@@ -76,6 +78,41 @@ function timer() {
         }, 1000)
     };
     return instance;
+}
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        alert("浏览器不支持地理定位。");
+    }
+}
+function showPosition(position) {
+    var lat = position.coords.latitude; //纬度
+    var lag = position.coords.longitude; //经度
+
+    var latlon = lat + ',' + lag;
+
+    var $business = $("#business");
+    //baidu
+    var url = "http://api.map.baidu.com/geocoder/v2/?ak=sk4aD5OWDtIzYAgtOD8PdAmW&callback=renderReverse&location=" + latlon + "&output=json&pois=0";
+    $.ajax({
+        type: "GET",
+        dataType: "jsonp",
+        url: url,
+        beforeSend: function () {
+            $business.html('正在定位...');
+        },
+        success: function (json) {
+            alert(json.status);
+            if (json.status == 0) {
+                $business.html(json.result.business);
+            }
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            $business.html(latlon + "地址位置获取失败");
+        }
+    });
 }
 
 $(function () {

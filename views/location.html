@@ -50,7 +50,7 @@
             success: function (json) {
                 alert(json.status);
                 if (json.status == 0) {
-                    y.innerHTML = json.result.formatted_address;
+                    y.innerHTML = json.result.business;
                 }
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
