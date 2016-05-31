@@ -22,6 +22,7 @@ function htmlgeo() {
 function getPosition(position) {
     latitude = position.coords.latitude;
     longitude = position.coords.longitude;
+    baidugeo();
 }
 
 function baidugeo() {
