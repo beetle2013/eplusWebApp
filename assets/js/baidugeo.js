@@ -26,6 +26,7 @@ function geo() {
         latitude = position.coords.latitude;
         longitude = position.coords.longitude;
         baidugeo();
+        googlegeo();
     }
 
     function baidugeo() {
