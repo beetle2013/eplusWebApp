@@ -44,9 +44,9 @@
                 alert("正在定位");
             },
             success: function (json) {
+                alert(json.status);
                 if (json.status == 0) {
                     y.innerHTML = json.result.formatted_address;
-                    alert(json.result.formatted_address);
                 }
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
