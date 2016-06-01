@@ -89,9 +89,12 @@ function getLocation() {
 }
 function showPosition(position) {
     var lat = position.coords.latitude; //纬度
-    var lag = position.coords.longitude; //经度
+    var lon = position.coords.longitude; //经度
 
-    var latlon = lat + ',' + lag;
+    // var latlon = lat + ',' + lag;
+
+    var d = Mars.Coordinate();
+    var latlon = d.transform2Mars(lat,lon);
 
     var $business = $("#business");
     //baidu
@@ -106,6 +109,7 @@ function showPosition(position) {
         success: function (json) {
             if (json.status == 0) {
                 $business.html(json.result.business);
+                alert(json.result.formatted_address)
             }
         },
         error: function (XMLHttpRequest, textStatus, errorThrown) {
