@@ -395,6 +395,8 @@ s {
 .cates{
     width: 25%;
     float: left;
+    height: 100%;
+    overflow: auto;
 }
 .cates li{
     text-align: center;
@@ -405,7 +407,8 @@ s {
     float: left;
     width: 75%;
     background: #fff;
-    overflow-y: scroll;
+    height:100%;
+    overflow: auto;
 }
 
 .cate-good{
