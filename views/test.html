@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="zh">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="format-detection"content="telephone=no" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
     <title>逆地理编码</title>
     <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
     <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=68fd669ecae3a34628b03d4e87e68a89&plugin=AMap.Geocoder"></script>
@@ -21,7 +20,7 @@
                 resizeEnable: true,
                 zoom: 18
             }),
-            lnglatXY = [116.396574, 39.992706]; //已知点坐标
+            lnglatXY = [116.396574, 20.992706]; //已知点坐标
     function regeocoder() {  //逆地理编码
         var geocoder = new AMap.Geocoder({
             radius: 1000,
