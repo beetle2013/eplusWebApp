@@ -89,12 +89,12 @@ function getLocation() {
 }
 function showPosition(position) {
     var lat = position.coords.latitude; //纬度
-    var lon = position.coords.longitude; //经度
-    alert(lat + ',' + lon);
+    var lng = position.coords.longitude; //经度
+    alert(lat + ',' +lng);
     // var latlon = lat + ',' + lag;
 
     //wgs84转国测局坐标
-    var wgs84togcj02 = coordtransform.wgs84togcj02(lat, lon);
+    var wgs84togcj02 = coordtransform.wgs84togcj02(lng, lat);
     alert(wgs84togcj02[0] + ',' + wgs84togcj02[1]);
 
     //国测局坐标转百度经纬度坐标
@@ -103,7 +103,7 @@ function showPosition(position) {
     alert(gcj02tobd09[0] + ',' + gcj02tobd09[1]);
 
 
-    var latlon = gcj02tobd09[0] + ',' + gcj02tobd09[1];
+    var latlon = gcj02tobd09[1] + ',' + gcj02tobd09[0];
     var $business = $("#business");
     //baidu
     var url = "http://api.map.baidu.com/geocoder/v2/?ak=sk4aD5OWDtIzYAgtOD8PdAmW&callback=renderReverse&location=" + latlon + "&output=json&pois=0";
