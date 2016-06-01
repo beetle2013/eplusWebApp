@@ -40,8 +40,8 @@ $(document).ready(function () {
 
     var t = timer();
     t.countDown(".time_left");
-    
-    $('.input-wrapper input').on('tap',function () {
+
+    $('.input-wrapper input').on('tap', function () {
         window.location.href = "search.html";
     })
 
@@ -93,9 +93,12 @@ function showPosition(position) {
 
     // var latlon = lat + ',' + lag;
 
-    var d = Mars.Coordinate();
-    var latlon = d.transform2Mars(lat,lon);
+    //wgs84转国测局坐标
+    var wgs84togcj02 = coordtransform.wgs84togcj02(lat, lon);
+    //国测局坐标转百度经纬度坐标
+    var gcj02tobd09 = coordtransform.gcj02tobd09(wgs84togcj02[0], wgs84togcj02[1]);
 
+    var latlon = gcj02tobd09[0] + ',' + gcj02tobd09[1];
     var $business = $("#business");
     //baidu
     var url = "http://api.map.baidu.com/geocoder/v2/?ak=sk4aD5OWDtIzYAgtOD8PdAmW&callback=renderReverse&location=" + latlon + "&output=json&pois=0";
