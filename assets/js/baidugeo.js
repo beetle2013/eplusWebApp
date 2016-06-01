@@ -31,7 +31,6 @@ function geo() {
 
     function baidugeo() {
         var url = baidu_url + "?ak=" + baidu_ak + "&callback=renderReverse&location=" + latitude + "," + longitude + "&output=json&pois=0";
-
         $.ajax({
             type: "GET",
             dataType: "jsonp",
