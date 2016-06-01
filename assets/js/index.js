@@ -90,13 +90,18 @@ function getLocation() {
 function showPosition(position) {
     var lat = position.coords.latitude; //纬度
     var lon = position.coords.longitude; //经度
-
+    alert(lat + ',' + lon);
     // var latlon = lat + ',' + lag;
 
     //wgs84转国测局坐标
     var wgs84togcj02 = coordtransform.wgs84togcj02(lat, lon);
+    alert(wgs84togcj02[0] + ',' + wgs84togcj02[1]);
+
     //国测局坐标转百度经纬度坐标
     var gcj02tobd09 = coordtransform.gcj02tobd09(wgs84togcj02[0], wgs84togcj02[1]);
+
+    alert(gcj02tobd09[0] + ',' + gcj02tobd09[1]);
+
 
     var latlon = gcj02tobd09[0] + ',' + gcj02tobd09[1];
     var $business = $("#business");
@@ -112,7 +117,7 @@ function showPosition(position) {
         success: function (json) {
             if (json.status == 0) {
                 $business.html(json.result.business);
-                alert(json.result.formatted_address)
+                // alert(json.result.formatted_address)
             }
         },
         error: function (XMLHttpRequest, textStatus, errorThrown) {
