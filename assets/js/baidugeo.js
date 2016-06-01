@@ -27,7 +27,7 @@ function geo() {
         longitude = position.coords.longitude;
         baidugeo();
         googlegeo();
-    }
+    }       
 
     function baidugeo() {
         var url = baidu_url + "?ak=" + baidu_ak + "&callback=renderReverse&location=" + latitude + "," + longitude + "&output=json&pois=0";
