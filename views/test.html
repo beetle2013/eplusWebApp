@@ -12,24 +12,10 @@
     <b>您当前的位置:</b>
     <span id="result"></span>
 </div>
-<script src="../assets/js/MarsCoordinate.js"></script>
+<script src="../assets/js/Calc.js"></script>
 <script type="text/javascript">
-
-    function getLocation() {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(showPosition);
-        } else {
-            alert("浏览器不支持地理定位。");
-        }
-    }
-    function showPosition(position) {
-        var lat = position.coords.latitude; //纬度
-        var lag = position.coords.longitude; //经度
-        var dd = new MarsCoordinate();
-        dd.mgLat = lat;
-        dd.mgLon = lag;
-        dd.transform2Mars;
-    }
+    var d = Calc.createCalc(4, 5);
+    alert(d.plus());
 </script>
 </body>
 </html>
