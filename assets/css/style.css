@@ -398,6 +398,10 @@ s {
     height: 100%;
     overflow: auto;
 }
+
+.active-cate{
+    background: #fff;
+}
 .cates li{
     text-align: center;
     height: 40px;
