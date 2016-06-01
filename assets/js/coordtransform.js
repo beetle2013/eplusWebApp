@@ -64,6 +64,7 @@
      */
     var wgs84togcj02 = function wgs84togcj02(lng, lat) {
         if (out_of_china(lng, lat)) {
+            alert("out-of-china");
             return [lng, lat]
         } else {
             var dlat = transformlat(lng - 105.0, lat - 35.0);
