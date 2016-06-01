@@ -11,6 +11,7 @@ header {
     text-align: center;
     color: #f77a38;
     background: #fdfcfa;
+    border-bottom: 1px solid #ddd;
 }
 
 header a {

@@ -96,8 +96,16 @@
 </footer>
 <script src="../libs/zepto/zepto.js"></script>
 <script>
-    var height = $(window).height() - $('header').height() - $('footer').height();
-    $('.cate-main').height(height);
+    $(document).ready(function () {
+        var height = $(window).height() - $('header').height() - $('footer').height();
+        $('.cate-main').height(height);
+        $('.cates li').on('tap',function () {
+            $(this).siblings.removeClass('active-cate');
+            $(this).addClass('active-cate');
+
+        })
+    });
+
 </script>
 </body>
 </html>
