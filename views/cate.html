@@ -100,7 +100,7 @@
         var height = $(window).height() - $('header').height() - $('footer').height();
         $('.cate-main').height(height);
         $('.cates li').on('tap',function () {
-            $(this).siblings.removeClass('active-cate');
+            $(this).siblings('li').removeClass('active-cate');
             $(this).addClass('active-cate');
 
         })

@@ -112,7 +112,7 @@ function showPosition(position) {
         success: function (json) {
             if (json.status == 0) {
                 $business.html(json.result.business);
-                alert(json.result.formatted_address)
+                // alert(json.result.formatted_address)
             }
         },
         error: function (XMLHttpRequest, textStatus, errorThrown) {
