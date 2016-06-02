@@ -10,6 +10,7 @@ visit form qrcode
 
 ###首页
 ####html5定位
+``` js
     function getLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(showPosition);
@@ -21,6 +22,8 @@ visit form qrcode
         var lat = position.coords.latitude; //纬度
         var lng = position.coords.longitude; //经度
     }
+```
+
 ######PC端浏览器除IE外定位不可用，移动端基本都可用
 
 #####此处有坑
