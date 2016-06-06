@@ -544,6 +544,7 @@ s {
 }
 
 .cart-good .plus, .cart-good .minus, .cart-good .quantity {
+    float: left;
     border-radius: 2px;
     text-align: center;
     display: inline-block;
