@@ -72,6 +72,6 @@ img{
 
 /*Remove iOS rounded input styles*/
 input{
-    -webkit-appearance : none ;
+    /*-webkit-appearance : none ;*/
 }
 

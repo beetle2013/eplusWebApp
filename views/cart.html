@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../libs/icheck/orange.css">
+
+    <title>购物车</title>
+</head>
+<body>
+<div class="header">
+    <span class="ico ico-back pull-left"></span>
+    <h3>购物车</h3>
+</div>
+
+<section class="delivery-wrapper">
+    <p class="title">配送地址</p>
+    <div class="delivery">
+        <span class="name">陈某某（先生）</span>
+        <span class="tel pull-right">13920394857</span>
+        <span class="address clearfix">上海市浦东新区碧波路500号</span>
+    </div>
+</section>
+
+<section class="cart-goods">
+    <div class="cart-good clearfix">
+        <input type="checkbox" class="select-single">
+        <img src="../assets/img/570.jpg" alt="">
+        <h3>水果水果(10斤/箱)</h3>
+        <p class="price main-color">￥3.30</p>
+        <div class="cart-btn-group">
+            <span class="minus">-</span>
+            <input class="quantity" type="number" value="2">
+            <span class="plus">+</span>
+        </div>
+    </div>
+    <div class="cart-good clearfix">
+        <input type="checkbox" class="select-single">
+        <img src="../assets/img/3427.jpg" alt="">
+        <h3>水果水果(10斤/箱)</h3>
+        <p class="price main-color">￥3.30</p>
+        <div class="cart-btn-group">
+            <span class="minus">-</span>
+            <input class="quantity" type="number" value="2">
+            <span class="plus">+</span>
+        </div>
+    </div>
+    <div class="cart-good clearfix">
+        <input type="checkbox" class="select-single">
+        <img src="../assets/img/2932.jpg" alt="">
+        <h3>水果水果(10斤/箱)</h3>
+        <p class="price main-color">￥3.30</p>
+        <div class="cart-btn-group">
+            <span class="minus">-</span>
+            <input class="quantity" type="number" value="2">
+            <span class="plus">+</span>
+        </div>
+    </div>
+    <div class="cart-good clearfix">
+        <input type="checkbox" class="select-single">
+        <img src="../assets/img/1264.jpg" alt="">
+        <h3>水果水果(10斤/箱)</h3>
+        <p class="price main-color">￥3.30</p>
+        <div class="cart-btn-group">
+            <span class="minus">-</span>
+            <input class="quantity" type="number" value="2">
+            <span class="plus">+</span>
+        </div>
+    </div>
+    <div class="cart-good clearfix">
+        <input type="checkbox" class="select-single">
+        <img src="../assets/img/993.jpg" alt="">
+        <h3>水果水果(10斤/箱)</h3>
+        <p class="price main-color">￥3.30</p>
+        <div class="cart-btn-group">
+            <span class="minus">-</span>
+            <input class="quantity" type="number" value="2">
+            <span class="plus">+</span>
+        </div>
+    </div>
+</section>
+
+<section class="coupon">
+    <ul>
+        <li><span>惠</span> 使用的优惠 <select name="" id="">
+            <option value="0">邀请有礼，3元</option>
+        </select></li>
+        <li><span>减</span>满99减20</li>
+        <li><span>凑</span>去凑单 <span class="pull-right">还差15.6元免送费</span></li>
+    </ul>
+</section>
+
+<section>
+    <input type="text" placeholder="给卖家留言，最多40字">
+</section>
+
+<footer class="cart-footer">
+    <input type="checkbox"><span>全选</span>
+    <div>
+        <p>优惠：￥3.00</p>
+        <p>商品总额：￥46.00</p>
+        <a href="" class="btn">去结算</a>
+    </div>
+</footer>
+
+<script src="../libs/zepto/zepto.js"></script>
+<!--<script src="../libs/jquery/dist/jquery.js"></script>-->
+<script src="../libs/icheck/icheck.min.js"></script>
+<script>
+    $("input[type = checkbox]").iCheck({
+        checkboxClass: 'icheckbox_square-orange',
+        radioClass: 'iradio_square-orange',
+//            increaseArea: '20%' // optional
+    });
+
+</script>
+</body>
+</html>

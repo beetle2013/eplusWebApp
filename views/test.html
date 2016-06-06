@@ -1,22 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
-    <title>火星坐标</title>
+    <style>
+        div {
+            border: 10px solid transparent;
+            width: 40px;
+            padding: 5px 10px;
+            -moz-border-image: url('../assets/img/envelope.png') 0 14 0 14 stretch; /* 老版本的 Firefox */
+            -webkit-border-image: url('../assets/img/envelope.png') 0 14 0 14 stretch; /* Safari */
+            -o-border-image: url('../assets/img/envelope.png') 0 14 0 14 stretch; /* Opera */
+            border-image: url('../assets/img/envelope.png') 0 14 0 14 stretch;
+        }
+    </style>
 </head>
 <body>
-<div id="container"></div>
-<div id="tip">
-    <b>您当前的位置:</b>
-    <span id="result"></span>
-</div>
-<script src="../assets/js/Mars.js"></script>
-<script type="text/javascript">
-    var d = Mars.Coordinate();
-    alert(d.transform2Mars(31,120));
-</script>
+
+<p><b>注释：</b>Internet Explorer 不支持 border-image 属性。</p>
+
+<div>Search</div>
+
+<p>这是我们使用的图片：</p>
+<img src="../assets/img/envelope.png">
+
 </body>
 </html>
-

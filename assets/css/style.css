@@ -4,7 +4,7 @@ body {
     font-size: 12px;
 }
 
-header {
+header, .header {
     padding: 0 12px;
     height: 40px;
     line-height: 40px;
@@ -41,6 +41,10 @@ header a {
 
 .ico-message {
     background-position: 0 -28px;
+}
+
+.ico-back {
+    background-position: 0 -308px;
 }
 
 .ico-search {
@@ -289,7 +293,7 @@ footer a {
 s {
     margin-left: 4px;
     color: #333;
-    font-size: 0.9em;
+    font-size: 0.6em;
 }
 
 .ico-cart {
@@ -384,51 +388,66 @@ s {
     bottom: 0
 }
 
-.main{
+.main {
     margin-bottom: 58px;
 }
 
 /*cate.html*/
-.cate-wrapper{
-    width: 100%!important;
+.cate-wrapper {
+    width: 100% !important;
 }
 
-.cates{
+.cates {
     width: 25%;
     float: left;
     height: 100%;
     overflow: auto;
 }
 
-.active-cate{
+.active-cate {
+    color: #f77a38;
     background: #fff;
 }
-.cates li{
+
+.cates li {
     text-align: center;
     height: 40px;
     line-height: 40px;
 }
-.cate-goods{
+
+.cate-goods {
     float: left;
     width: 75%;
     background: #fff;
-    height:100%;
+    height: 100%;
     overflow: auto;
 }
 
-.cate-good{
+.cate-good {
     position: relative;
     border-bottom: 1px solid #ddd;
 }
 
-.cate-good img{
+.cate-good img {
     float: left;
     width: 80px;
     height: 80px;
     padding: 5px;
 }
 
-.cate-cart{
+.cate-good h3 {
+    font-size: 14px;
+    margin: 10px 0 2px;
+}
+
+.cate-good .price {
+    position: absolute;
+    bottom: 4px;
+    left: 90px;
+    font-size: 16px;
+}
+
+.cate-cart {
     position: absolute;
     border-radius: 2px;
     text-align: center;
@@ -445,11 +464,12 @@ s {
 
 /*search.html*/
 
-.search-main{
+.search-main {
     padding: 0 15px;
     color: #909090;
 }
-.search-tag span{
+
+.search-tag span {
     color: #4e4e4e;
     background: #fff;
     border: 1px solid #bbb;
@@ -462,3 +482,88 @@ s {
     line-height: 30px;
     display: inline-block;
 }
+
+.header h3 {
+    margin: 0;
+}
+
+/*cart.html*/
+.delivery-wrapper {
+    background: #f7f7f7;
+    padding: 8px 0;
+}
+
+.delivery-wrapper .title {
+    padding-left: 15px;
+    margin-bottom: 2px;
+}
+
+.delivery {
+    font-size: 14px;
+    line-height: 25px;
+    background: #fffceb;
+    padding: 0 15px;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-image: url('../img/envelope.png') 20 stretch;
+}
+
+.cart-goods {
+    padding-left: 15px;
+}
+
+.cart-good {
+    position: relative;
+    border-bottom: 1px solid #e1e4e4;
+    padding: 5px;
+}
+
+.cart-good h3 {
+    margin: 10px;
+}
+
+.select-single {
+    float: left;
+}
+
+.cart-good img {
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+.cart-good .price{
+    font-size: 1.5em;
+}
+
+.cart-btn-group{
+    position: absolute;
+    right: 20px;
+    bottom: 18px;
+}
+
+.cart-good .plus, .cart-good .minus, .cart-good .quantity {
+    border-radius: 2px;
+    text-align: center;
+    display: inline-block;
+    width: 30px;
+    height: 27px;
+    line-height: 25px;
+    font-weight: 600;
+    color: #888;
+    font-size: 1.2em;
+    background: #eee;
+}
+
+.cart-good .quantity {
+    border: 0;
+    width: 45px;
+    height: 25px;
+}
+
+.icheckbox_square-orange{
+    float: left;
+    top: 30px;
+}
+
+
