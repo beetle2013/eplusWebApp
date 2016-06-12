@@ -619,6 +619,7 @@ s {
     height: 20px;
     margin: 5px 10px;
     font-size: 10px;
+    -webkit-tap-highlight-color:transparent;
 }
 
 .coupon .join-tip{
