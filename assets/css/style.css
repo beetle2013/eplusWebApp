@@ -517,6 +517,9 @@ s {
     border-bottom: 1px solid #e1e4e4;
     padding: 5px;
 }
+.cart-good:last-child {
+    border-bottom: 0;
+}
 
 .cart-good h3 {
     margin: 10px;
@@ -591,7 +594,6 @@ s {
 }
 
 .coupon .text-ico{
-    border: 1px solid purple;
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -601,5 +603,26 @@ s {
     padding: 4px;
     font-size: 1.4em;
     margin: 0px 12px;
+}
+
+.coupon .coupon{
+    border: 1px solid purple;
+    color: purple;
+}
+.coupon .free ,.coupon .join{
+    border: 1px solid blue;
+    color: blue;
+}
+
+.coupon select{
+    border: 0;
+    height: 20px;
+    margin: 5px 10px;
+    font-size: 10px;
+}
+
+.coupon .join-tip{
+    margin-right: 10px;
+    font-size: 10px;
 }
 
